@@ -5,120 +5,140 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Random International School</title>
+  <link rel="shortcut icon" href="https://picsum.photos/id/742/200/200?grayscale" type="image/x-icon">
 </head>
 
 <body>
   <nav>
-    <img src="https://fastly.picsum.photos/id/1063/200/200.jpg?hmac=MY2ChBFr2WzXJRx0fJyztE7fXaMohAdg1Gh1U7yop1k"
-      alt="School's Logo">
+    <div class="brand">
+      <img class="brand-icon" src="https://picsum.photos/id/742/100/100?grayscale" alt="School's Logo">
+      <h3>Random International School</h3>
+    </div>
     <ul>
-      <li class="active">Home</li>
-      <li>Profiles</li>
-      <li>Achievements</li>
-      <li>Contact</li>
+      <li class="active"><a href="#banner">Home</a></li>
+      <li><a href="#profile">Profiles</a></li>
+      <li><a href="#">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <section id="banner">
-    <header>
-      <h1>Welcome!</h1>
-      <h3>
-        to The Most Random
-        <br>
-        International School.
-      </h3>
-      <a href="#">Check out our profiles</a>
-    </header>
-    <img src="https://picsum.photos/id/101/1366/578" alt="Banner Images">
-  </section>
-  <section id="profile">
-    <header>
-      <h1>Our Profiles</h1>
-    </header>
-    <div class="column-2">
-      <div>
-        <h3>History</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde maiores fuga ut sequi assumenda aspernatur
-          architecto facere, consectetur perferendis enim placeat ex nam officiis magnam temporibus alias vel ab ipsa?
-          Corrupti, a maiores. Dolor doloribus laboriosam ex, totam nulla laudantium praesentium ipsum eveniet
-          architecto vel unde modi voluptates possimus soluta magnam sit eligendi, maxime reprehenderit omnis dicta
-          odio. Tempore, ad!
-          Libero fugit iure nisi. Vitae nihil, assumenda velit, unde sequi aut incidunt reprehenderit tempora
-          laudantium ipsa sapiente possimus temporibus quibusdam animi quod voluptate inventore consequuntur
-          blanditiis facere! Corporis, odio veritatis?</p>
-      </div>
-      <div>
-        <h3>Vision and Mission</h3>
-        <p>
-          <b>Vision</b>
+  <main>
+    <section id="banner">
+      <header class="position-absolute">
+        <h1>Welcome!</h1>
+        <h3>
+          to The Most Random
           <br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quasi hic eveniet inventore voluptatibus
-          molestias aliquid quam dicta ducimus sint, omnis harum asperiores suscipit culpa animi nisi in esse dolore.
-        </p>
-        <p>
-          <b>Mission</b>
-          <br>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos deserunt ea reprehenderit explicabo
-          numquam corrupti deleniti excepturi illum suscipit cum repudiandae neque molestiae nemo voluptates, placeat
-          molestias, laudantium esse harum?
-        </p>
-      </div>
-    </div>
-  </section>
-  <section id="facilitations">
-    <header>
-      <h1>Facilitations</h1>
-    </header>
-    <div class="column-3">
-      <div class="card">
-        <img src="https://picsum.photos/id/378/410/300" alt="">
-      </div>
-      <div class="card text-center">
-        <img src="https://picsum.photos/id/390/410/300" alt="">
-      </div>
-      <div class="card text-right">
-        <img src="https://picsum.photos/id/395/410/300" alt="">
-      </div>
-    </div>
-  </section>
-  <section id="contact">
-    <header>
-      <h1>Contact Us</h1>
-    </header>
-    <form action="#" method="post">
+          International School.
+        </h3>
+        <a class="main-button" href="#">Check out our profiles</a>
+      </header>
+      <img class="mw-100 position-revert" src="https://picsum.photos/id/101/1366/578?grayscale" alt="Banner Images">
+    </section>
+    <section id="profile">
+      <header>
+        <h1>Our Profiles</h1>
+      </header>
       <div class="column-2">
         <div>
-          <table>
-            <tr>
-              <td><label for="name">Name</label></td>
-              <td>:</td>
-              <td><input type="text" placeholder="e.g: John Doe"></td>
-            </tr>
-            <tr>
-              <td><label for="born-date">Born Date</label></td>
-              <td>:</td>
-              <td><input type="date"></td>
-            </tr>
-            <tr>
-              <td><label for="sex">Jenis Kelamin</label></td>
-              <td>:</td>
-              <td>
-                <input type="radio">
-                <label>Men</label>
-                <input type="radio">
-                <label>Women</label>
-              </td>
-            </tr>
-            <tr>
-              <td><label for="message">Message</label></td>
-              <td>:</td>
-              <td><textarea placeholder="e.g: Hello World" rows="4"></textarea></td>
-            </tr>
-          </table>
+          <h3 class="m-y-15">History</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde maiores fuga ut sequi assumenda aspernatur
+            architecto facere, consectetur perferendis enim placeat ex nam officiis magnam temporibus alias vel ab ipsa?
+            Corrupti, a maiores. Dolor doloribus laboriosam ex, totam nulla laudantium praesentium ipsum eveniet
+            architecto vel unde modi voluptates possimus soluta magnam sit eligendi, maxime reprehenderit omnis dicta
+            odio. Tempore, ad!
+            Libero fugit iure nisi. Vitae nihil, assumenda velit, unde sequi aut incidunt reprehenderit tempora
+            laudantium ipsa sapiente possimus temporibus quibusdam animi quod voluptate inventore consequuntur
+            blanditiis facere! Corporis, odio veritatis?</p>
+        </div>
+        <div>
+          <h3 class="m-y-15">Vision and Mission</h3>
+          <p>
+            <b>Vision</b>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quasi hic eveniet inventore voluptatibus
+            molestias aliquid quam dicta ducimus sint, omnis harum asperiores suscipit culpa animi nisi in esse dolore.
+          </p>
+          <p>
+            <b>Mission</b>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos deserunt ea reprehenderit explicabo
+            numquam corrupti deleniti excepturi illum suscipit cum repudiandae neque molestiae nemo voluptates, placeat
+            molestias, laudantium esse harum?
+          </p>
         </div>
       </div>
-    </form>
-  </section>
+    </section>
+    <section id="facilitations">
+      <header>
+        <h1>Facilitations</h1>
+        <h3 class="m-y-15">Enjoy these facilities whenever you want!</h3>
+      </header>
+      <div class="column-3">
+        <div class="card">
+          <img src="https://picsum.photos/id/378/410/260?grayscale" alt="">
+        </div>
+        <div class="card text-center">
+          <img src="https://picsum.photos/id/390/410/260?grayscale" alt="">
+        </div>
+        <div class="card text-right">
+          <img src="https://picsum.photos/id/395/410/260?grayscale" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="achievements">
+      <header>
+        <h1>Achievements</h1>
+        <h3 class="m-y-15">These are achivements that our students get recently</h3>
+      </header>
+      <div class="column-3">
+        <div>
+          <img src="https://picsum.photos/id/378/410/260?grayscale" alt="">
+        </div>
+        <div class="text-center">
+          <img src="https://picsum.photos/id/390/410/260?grayscale" alt="">
+        </div>
+        <div class="text-right">
+          <img src="https://picsum.photos/id/395/410/260?grayscale" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <header>
+        <h1>Contact Us</h1>
+        <h3 class="m-y-15">Don't be silly to chat with us!</h3>
+      </header>
+      <form action="#" method="post">
+        <div class="column-2">
+          <div>
+            <table>
+              <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" placeholder="e.g: John Doe"></td>
+              </tr>
+              <tr>
+                <td><label for="born-date">Born Date</label></td>
+                <td><input type="date"></td>
+              </tr>
+              <tr>
+                <td><label for="sex">Jenis Kelamin</label></td>
+                <td>
+                  <input type="radio">
+                  <label>Men</label>
+                  <input type="radio">
+                  <label>Women</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="message">Message</label></td>
+                <td><textarea placeholder="e.g: Hello World" rows="4"></textarea></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
 </body>
 
 </html>
