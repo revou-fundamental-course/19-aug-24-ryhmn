@@ -19,12 +19,13 @@
       <li class="active"><a href="#banner">Home</a></li>
       <li><a href="#profile">Profiles</a></li>
       <li><a href="#">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">Message</a></li>
     </ul>
   </nav>
   <main>
     <section id="banner">
       <header class="position-absolute">
+        <h3>Hi! <span class="name">Anonym</span></h3>
         <h1>Welcome!</h1>
         <h3>
           to The Most Random
@@ -105,7 +106,7 @@
     </section>
     <section id="contact">
       <header>
-        <h1>Contact Us</h1>
+        <h1>Message Us</h1>
         <h3 class="m-y-15">Don't be silly to chat with us!</h3>
       </header>
       <form action="#" method="post">
@@ -114,14 +115,17 @@
             <table>
               <tr>
                 <td><label for="name">Name</label></td>
+                <td>:</td>
                 <td><input type="text" placeholder="e.g: John Doe"></td>
               </tr>
               <tr>
                 <td><label for="born-date">Born Date</label></td>
+                <td>:</td>
                 <td><input type="date"></td>
               </tr>
               <tr>
-                <td><label for="sex">Jenis Kelamin</label></td>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td>:</td>
                 <td>
                   <input type="radio">
                   <label>Men</label>
@@ -131,7 +135,38 @@
               </tr>
               <tr>
                 <td><label for="message">Message</label></td>
-                <td><textarea placeholder="e.g: Hello World" rows="4"></textarea></td>
+                <td>:</td>
+                <td><textarea placeholder="e.g: Hello World" rows="5"></textarea></td>
+              </tr>
+            </table>
+            <button class="main-button w-100 m-y-15" type="submit">Submit</button>
+          </div>
+          <div>
+            <table>
+              <tr>
+                <td>Current Time</td>
+                <td>:</td>
+                <td class="border-bottom w-80 p-y-5"></td>
+              </tr>
+              <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td class="border-bottom w-80 p-y-5"></td>
+              </tr>
+              <tr>
+                <td>Born Date</td>
+                <td>:</td>
+                <td class="border-bottom w-80 p-y-5"></td>
+              </tr>
+              <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td class="border-bottom w-80 p-y-5"></td>
+              </tr>
+              <tr>
+                <td>Message</td>
+                <td>:</td>
+                <td class="border-bottom w-80 p-y-5"></td>
               </tr>
             </table>
           </div>

@@ -63,6 +63,20 @@ h3:not(section:first-of-type h3, nav h3)::after {
   border: 1px solid #413e3edc;
 }
 
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 35vw;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1.2px solid #413e3edc;
+  border-radius: 5px;
+}
+
 .column-2 {
   display: flex;
   gap: 60px;
@@ -101,6 +115,8 @@ h3:not(section:first-of-type h3, nav h3)::after {
   background-color: #000;
   color: #fff;
   padding: 12px 20px;
+  border: 0;
+  cursor: pointer;
 }
 
 .brand {
@@ -133,6 +149,26 @@ h3:not(section:first-of-type h3, nav h3)::after {
   margin: 15px 0;
 }
 
+.p-y-5 {
+  padding: 5px 0;
+}
+
+.border {
+  border: 1px solid #000;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #413e3edc;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
 #banner header {
   text-align: end;
   top: 160px;
@@ -143,7 +179,7 @@ h3:not(section:first-of-type h3, nav h3)::after {
   font-size: 60px;
 }
 
-#banner h3 {
-  letter-spacing: 1.3px;
+#banner h3:last-of-type {
+  letter-spacing: 1.1px;
   margin-bottom: 40px;
 }
