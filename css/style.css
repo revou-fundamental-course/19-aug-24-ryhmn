@@ -51,10 +51,6 @@ h1:not(section:first-of-type h1)::after {
   font-size: 20px;
 }
 
-h3:not(section:first-of-type h3, nav h3) {
-  color: #413e3eb7;
-}
-
 h3:not(section:first-of-type h3, nav h3)::after {
   content: "";
   position: absolute;
@@ -75,6 +71,12 @@ textarea {
   margin: 5px 0;
   border: 1.2px solid #413e3edc;
   border-radius: 5px;
+}
+
+footer {
+  margin: 90px 60px 0;
+  border-top: 1px solid #413e3edc;
+  padding: 30px 0;
 }
 
 .column-2 {
@@ -167,6 +169,10 @@ textarea {
 
 .w-80 {
   width: 80%;
+}
+
+.text-black-olive {
+  color: #413e3eb7;
 }
 
 #banner header {
