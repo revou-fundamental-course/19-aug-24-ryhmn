@@ -18,7 +18,7 @@
     <ul>
       <li class="active"><a href="#banner">Home</a></li>
       <li><a href="#profile">Profiles</a></li>
-      <li><a href="#">Achievements</a></li>
+      <li><a href="#achievement">Achievements</a></li>
       <li><a href="#contact">Message</a></li>
     </ul>
   </nav>
@@ -32,7 +32,7 @@
           <br>
           International School.
         </h3>
-        <a class="main-button" href="#">Check out our profiles</a>
+        <a class="main-button" href="#profile">Check out our profiles</a>
       </header>
       <img class="mw-100 position-revert" src="https://picsum.photos/id/101/1366/578?grayscale" alt="Banner Images">
     </section>
@@ -87,7 +87,7 @@
         </div>
       </div>
     </section>
-    <section id="achievements">
+    <section id="achievement">
       <header>
         <h1>Achievements</h1>
         <h3 class="m-y-15">These are achivements that our students get recently</h3>
@@ -109,71 +109,72 @@
         <h1>Message Us</h1>
         <h3 class="m-y-15">Don't be silly to chat with us!</h3>
       </header>
-      <form action="#" method="post">
-        <div class="column-2">
-          <div>
+      <div class="column-2">
+        <div>
+          <form>
             <table>
               <tr>
                 <td><label for="name">Name</label></td>
                 <td>:</td>
-                <td><input type="text" placeholder="e.g: John Doe"></td>
+                <td><input type="text" name="name" placeholder="e.g., John Doe"></td>
               </tr>
               <tr>
                 <td><label for="born-date">Born Date</label></td>
                 <td>:</td>
-                <td><input type="date"></td>
+                <td><input type="date" name="born-date"></td>
               </tr>
               <tr>
                 <td><label for="gender">Jenis Kelamin</label></td>
                 <td>:</td>
                 <td>
-                  <input type="radio">
+                  <input type="radio" name="gender" value="Men">
                   <label>Men</label>
-                  <input type="radio">
+                  <input type="radio" name="gender" value="Women">
                   <label>Women</label>
                 </td>
               </tr>
               <tr>
                 <td><label for="message">Message</label></td>
                 <td>:</td>
-                <td><textarea placeholder="e.g: Hello World" rows="5"></textarea></td>
+                <td><textarea name="message" placeholder="e.g., Hello World" rows="5"></textarea></td>
               </tr>
             </table>
             <button class="main-button w-100 m-y-15" type="submit">Submit</button>
-          </div>
-          <div>
-            <table>
-              <tr>
-                <td>Current Time</td>
-                <td>:</td>
-                <td class="border-bottom w-80 p-y-5"></td>
-              </tr>
-              <tr>
-                <td>Name</td>
-                <td>:</td>
-                <td class="border-bottom w-80 p-y-5"></td>
-              </tr>
-              <tr>
-                <td>Born Date</td>
-                <td>:</td>
-                <td class="border-bottom w-80 p-y-5"></td>
-              </tr>
-              <tr>
-                <td>Gender</td>
-                <td>:</td>
-                <td class="border-bottom w-80 p-y-5"></td>
-              </tr>
-              <tr>
-                <td>Message</td>
-                <td>:</td>
-                <td class="border-bottom w-80 p-y-5"></td>
-              </tr>
-            </table>
-          </div>
+          </form>
         </div>
-      </form>
+        <div>
+          <table>
+            <tr>
+              <td>Current Time</td>
+              <td>:</td>
+              <td id="display-current-time" class="border-bottom w-80 p-y-5"></td>
+            </tr>
+            <tr>
+              <td>Name</td>
+              <td>:</td>
+              <td id="display-name" class="border-bottom w-80 p-y-5"></td>
+            </tr>
+            <tr>
+              <td>Born Date</td>
+              <td>:</td>
+              <td id="display-born-date" class="border-bottom w-80 p-y-5"></td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>:</td>
+              <td id="display-gender" class="border-bottom w-80 p-y-5"></td>
+            </tr>
+            <tr>
+              <td>Message</td>
+              <td>:</td>
+              <td id="display-message" class="border-bottom w-80 p-y-5"></td>
+            </tr>
+          </table>
+        </div>
     </section>
   </main>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
