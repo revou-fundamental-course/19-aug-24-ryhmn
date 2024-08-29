@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav>
     <div class="brand">
       <img class="brand-icon" src="https://picsum.photos/id/742/100/100?grayscale" alt="School's Logo">
@@ -22,9 +23,11 @@
       <li><a href="#contact">Message</a></li>
     </ul>
   </nav>
+  <!-- End Navbar -->
+  <!-- Main -->
   <main>
-    <section id="banner">
-      <header class="position-absolute">
+    <section id="banner" class="slider-container">
+      <header class="text-right">
         <h3>Hi! <span class="name">Anonym</span></h3>
         <h1>Welcome!</h1>
         <h3>
@@ -34,7 +37,6 @@
         </h3>
         <a class="main-button" href="#profile">Check out our profiles</a>
       </header>
-      <img class="mw-100 position-revert" src="https://picsum.photos/id/101/1366/578?grayscale" alt="Banner Images">
     </section>
     <section id="profile">
       <header>
@@ -76,14 +78,14 @@
         <h3 class="m-y-15 text-black-olive">Enjoy these facilities whenever you want!</h3>
       </header>
       <div class="column-3">
-        <div class="card">
-          <img src="https://picsum.photos/id/378/410/260?grayscale" alt="">
+        <div>
+          <img class="mw-100" src="https://picsum.photos/id/378/410/260?grayscale" alt="Picsum Image">
         </div>
-        <div class="card text-center">
-          <img src="https://picsum.photos/id/390/410/260?grayscale" alt="">
+        <div class="text-center">
+          <img class="mw-100" src="https://picsum.photos/id/390/410/260?grayscale" alt="Picsum Image">
         </div>
-        <div class="card text-right">
-          <img src="https://picsum.photos/id/395/410/260?grayscale" alt="">
+        <div class="text-right">
+          <img class="mw-100" src="https://picsum.photos/id/395/410/260?grayscale" alt="Picsum Image">
         </div>
       </div>
     </section>
@@ -94,23 +96,24 @@
       </header>
       <div class="column-3">
         <div>
-          <img src="https://picsum.photos/id/378/410/260?grayscale" alt="">
+          <img class="mw-100" src="https://picsum.photos/id/378/410/260?grayscale" alt="Picsum Image">
         </div>
         <div class="text-center">
-          <img src="https://picsum.photos/id/390/410/260?grayscale" alt="">
+          <img class="mw-100" src="https://picsum.photos/id/390/410/260?grayscale" alt="Picsum Image">
         </div>
         <div class="text-right">
-          <img src="https://picsum.photos/id/395/410/260?grayscale" alt="">
+          <img class="mw-100" src="https://picsum.photos/id/395/410/260?grayscale" alt="Picsum Image">
         </div>
       </div>
     </section>
     <section id="contact">
       <header>
         <h1>Message Us</h1>
-        <h3 class="m-y-15 text-black-olive">Don't be silly to chat with us!</h3>
+        <h3 class="m-y-15 text-black-olive">Don't be shy to chat with us!</h3>
       </header>
       <div class="column-2">
         <div>
+          <!-- Below is the form -->
           <form>
             <table>
               <tr>
@@ -143,6 +146,7 @@
           </form>
         </div>
         <div>
+          <!-- Here is the table, used to display the form results -->
           <table>
             <tr>
               <td>Current Time</td>
@@ -173,10 +177,13 @@
         </div>
     </section>
   </main>
+  <!-- End main -->
+  <!-- Footer -->
   <footer class="text-center text-black-olive">
     <h4>Created and Original Designed by Dary Rahman</h4>
     <p>This static website is created as a completation of RevoU mini course 19 Aug 2024</p>
   </footer>
+  <!-- End Footer -->
 
   <script src="js/script.js"></script>
 </body>

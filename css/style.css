@@ -19,7 +19,7 @@ nav {
 nav,
 ul {
   display: flex;
-  padding: 5px 30px;
+  padding: 5px 10px;
 }
 
 ul {
@@ -51,14 +51,6 @@ h1:not(section:first-of-type h1)::after {
   font-size: 20px;
 }
 
-h3:not(section:first-of-type h3, nav h3)::after {
-  content: "";
-  position: absolute;
-  transform: translate(5px, 12px);
-  width: 170px;
-  border: 1px solid #413e3edc;
-}
-
 input[type="text"],
 input[type="date"],
 textarea {
@@ -79,21 +71,25 @@ footer {
   padding: 30px 0;
 }
 
-.column-2 {
-  display: flex;
-  gap: 60px;
+footer h4 {
+  line-height: 25px;
 }
 
-.column-2 div {
-  width: 50vw;
+nav ul {
+  display: none;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .column-3 {
   display: flex;
-}
-
-.column-3 div {
-  width: 33.333vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .brand-icon {
@@ -119,11 +115,13 @@ footer {
   padding: 12px 20px;
   border: 0;
   cursor: pointer;
+  width: fit-content;
 }
 
 .brand {
   display: flex;
   align-items: center;
+  font-size: 13px;
 }
 
 .brand h3 {
@@ -175,17 +173,101 @@ footer {
   color: #413e3eb7;
 }
 
+#slider-container {
+  /* background-image: url("https://picsum.photos/id/101/1366/576?grayscale"); */
+  background-size: cover;
+  background-position: center;
+  height: fit-content;
+  padding: 90px 0 70px;
+  transition: background-image is ease-in-out;
+}
+
 #banner header {
-  text-align: end;
-  top: 160px;
-  left: 240px;
+  text-align: center;
 }
 
 #banner h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 #banner h3:last-of-type {
-  letter-spacing: 1.1px;
-  margin-bottom: 40px;
+  letter-spacing: .5px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (min-width:768px) {
+  nav ul {
+    display: flex;
+  }
+
+  nav {
+    padding: 5px 20px;
+  }
+
+  .column-3 {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .column-3 div {
+    width: 33.333vw;
+  }
+
+  .column-2 {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .column-2 div {
+    width: 50vw;
+  }
+
+  #banner {
+    padding: 120px 80px 70px;
+  }
+
+  #banner header {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width:992px) {
+
+  nav,
+  ul {
+    padding: 5px 30px;
+  }
+
+  h3:not(section:first-of-type h3, nav h3)::after {
+    content: "";
+    position: absolute;
+    transform: translate(5px, 12px);
+    width: 170px;
+    border: 1px solid #413e3edc;
+  }
+
+  .brand {
+    font-size: 1em;
+  }
+
+  #banner {
+    padding: 170px 200px;
+  }
+
+  #banner header {
+    align-items: flex-end;
+  }
+
+  #banner h1 {
+    font-size: 60px;
+  }
+
+  #banner h3:last-of-type {
+    letter-spacing: 1.1px;
+    margin-bottom: 40px;
+  }
 }
