@@ -1,3 +1,8 @@
+window.onload = function () {
+  inputNamePrompt();
+  changeBackground();
+};
+
 // Inout name prompt
 function inputNamePrompt() {
   var name = prompt("Please enter your name:");
@@ -8,8 +13,6 @@ function inputNamePrompt() {
     document.querySelector(".name").textContent = "Anonymous";
   }
 }
-
-window.onload = inputNamePrompt;
 
 // Form validation
 document.querySelector("form").addEventListener('submit', function (event) {
@@ -48,5 +51,3 @@ function changeBackground() {
 }
 
 setInterval(changeBackground, 3000);
-
-window.onload = changeBackground;
